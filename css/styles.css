@@ -14,6 +14,7 @@ header a {
   display: flex;
   align-content: center;
   align-items: center;
+  justify-content: space-between;
   height: 80px;
   border-bottom: 1px solid #ececec;
   background-color: #ffffff;
@@ -65,13 +66,26 @@ span {
   gap: 46px;
 }
 .navtmail {
+  position: relative;
   display: flex;
+  flex-direction: row;
   align-items: baseline;
-  align-content: center;
-
+  flex-wrap: nowrap;
   gap: 50px;
 }
+.navtmail .enwelope {
+  position: absolute;
+  display: flex;
+  margin-left: -20px;
+}
+
+.navtmail .smartphone {
+  position: absolute;
+  display: flex;
+  margin-left: -20px;
+}
 nav ul li a {
+  display: flex;
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
@@ -85,8 +99,6 @@ nav ul li a:hover {
 }
 .enwelope {
   --color1: #757575;
-  margin-right: 5px;
-  margin-top: 2px;
 }
 .enwelope:hover {
   --color3: #2196f3;
@@ -213,7 +225,7 @@ h2 {
 }
 .works {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding-bottom: 94px;
   gap: 30px;
 }
