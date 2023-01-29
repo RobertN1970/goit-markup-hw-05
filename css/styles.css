@@ -224,7 +224,8 @@ cursor: pointer;
 }
 
 .is-hidden{
-cursor:pointer;
+pointer-events: none;
+opacity: 0;
 visibility: hidden;
    transform: translateY(100%);
 }
